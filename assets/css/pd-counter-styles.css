@@ -1,0 +1,68 @@
+/* COUNTER */
+
+
+.counter-wrap {
+	background-image: url(https://image.shutterstock.com/z/stock-photo-mountain-range-with-visible-silhouettes-through-the-morning-colorful-fog-624908471.jpg);
+	background-repeat: repeat;
+	padding: 120px 60px 120px 60px;
+}
+.counter-wrap * {
+	box-sizing: border-box;
+}
+.counter {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+    justify-content: center;
+	flex-wrap: wrap;
+	list-style-type: none;
+    padding: 0;
+	background: #fff;
+	box-shadow: 0 0 10px #999;
+}
+.counter__item {
+	text-align: center;
+	padding: 8px 15px 17px;
+}
+@media (min-width: 992px) {
+	.counter__item {
+		flex: 25%;
+	}
+}
+@media (max-width: 991px) {
+	.counter__item {
+		width: 100%;
+	}
+}
+@media (min-width: 992px) {
+	.counter__item {
+		border-right: 1px dotted rgba(0, 0, 0, .2);
+	}
+}
+.counter__item:last-child {
+	border: none;
+}
+.counter__liczba {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.count-number {
+	vertical-align: middle;
+	display: inline-block;
+	font-size: 44px;
+	color: #444;
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	transition: all .1s ease-out;
+}
+.counter__opis {
+	text-align: center;
+	font-family: 'Mulish';
+	font-size: 13px;
+}
+.counter__item .far, .counter__item .fa {
+	font-size: 36px;
+	color: #004f92;
+	margin-right: 10px;
+}

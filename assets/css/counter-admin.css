@@ -1,0 +1,16 @@
+
+#repeatable-fieldset-one td {
+    padding-bottom: 50px;
+}
+#repeatable-fieldset-one label {
+    display: block;
+    padding: 10px;
+}
+
+.visibleTr {
+    padding: 20px;
+}
+
+.visibleTr:nth-of-type(2n+1) {
+    background: #ddd;
+}
